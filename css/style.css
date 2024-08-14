@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "digital-7";
+  src: url(../digital-7/digital-7.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #464646;
+  --green: #3e9f48;
+  --orange: #f69c34;
+  --white: #fefefe;
+}
+
+body {
+  background-color: var(--green);
+  height: 100vh;
+}
+
+main {
+  background-color: var(--black);
+  width: 100%;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+#result {
+  font-family: "digital-7", sans-serif;
+  font-size: 80px;
+  max-height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--black);
+  border-bottom: 10px solid lightgrey;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.btn {
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 5px 5px #222;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Noto Sans Indic Siyaq Numbers", sans-serif;
+}
+
+.btn-num {
+  font-size: 34px;
+}
+
+@media (width >= 764px) {
+  main {
+    width: 500px;
+  }
+}
